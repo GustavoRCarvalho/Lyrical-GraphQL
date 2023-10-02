@@ -5,13 +5,30 @@ ul {
 
   gap: 1em;
 
-  margin: 1em;
+  margin: 0;
 }
 
 li {
+  position: relative;
   background: radial-gradient(#000, #ea00ff);
   color: #fff;
+}
 
+.delete {
+  position: absolute;
+  right: 1em;
+
+  background-color: #ff0000;
+
+  border-radius: 0.5em;
+}
+
+button {
+  background-color: #0000;
+  border: none;
+}
+
+.list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,4 +41,9 @@ li {
   border-radius: 0.5em;
 
   cursor: pointer;
+}
+
+.create {
+  background: radial-gradient(#000, #00ff15);
+  color: #fff;
 }
